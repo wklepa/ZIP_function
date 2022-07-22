@@ -18,7 +18,10 @@
             string A = value.AA.ToString();
             string B = value.BB.ToString();
             char C = value.CC;
-            Console.WriteLine("{0}, {1}, {2}", A, B, C);
+            var toPrint = String.Join(", ", A, B, C);
+            var formatted = String.Format("United: {0}", toPrint);
+            Console.WriteLine(formatted);
+
         }
 
     }
