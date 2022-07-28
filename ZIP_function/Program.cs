@@ -21,6 +21,8 @@
             var toPrint = String.Join(", ", A, B, C);
             var formatted = String.Format("United: {0}", toPrint);
             Console.WriteLine(formatted);
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
 
         }
 
